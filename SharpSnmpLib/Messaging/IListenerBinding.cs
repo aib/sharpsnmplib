@@ -19,6 +19,7 @@
 
 using System;
 using System.Net;
+using System.Net.Sockets;
 using System.Threading.Tasks;
 
 namespace Lextm.SharpSnmpLib.Messaging
@@ -50,5 +51,10 @@ namespace Lextm.SharpSnmpLib.Messaging
         /// Endpoint.
         /// </summary>
         IPEndPoint Endpoint { get; }
+
+        /// <summary>
+        /// Socket.
+        /// </summary>
+		Socket Socket { get; }
     }
 }

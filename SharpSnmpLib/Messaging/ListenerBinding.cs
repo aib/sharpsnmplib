@@ -172,6 +172,12 @@ namespace Lextm.SharpSnmpLib.Messaging
         public IPEndPoint Endpoint { get; }
 
         /// <summary>
+        /// Gets the socket.
+        /// </summary>
+        /// <value>The underlying Socket object.</value>
+        public Socket Socket { get { return _socket; } }
+
+        /// <summary>
         /// Starts this instance.
         /// </summary>
         /// <exception cref="PortInUseException"/>
